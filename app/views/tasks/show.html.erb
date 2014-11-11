@@ -1,0 +1,4 @@
+<h1>This is one task for today:</h1>
+<h2>***<%= @task.name %>***</h2>
+<%= link_to "Edit", edit_task_path(task) %>
+<%= link_to "Delete", task_path(task), method: :delete, data: { confirm: 'Are you sure?' } %>
